@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .fixtext {
+            position: fixed;
+            top: 0;
+            left: 36%;
+            text-align: center;
+            width: 400px;
+            border: 1px solid green;
+            font-size: 50px;
+            background: rgba(44, 62, 80, 0.3);
+        }
+        
+        div.gallery {
+            margin: 5px;
+            border: 1px solid gray;
+            float: left;
+            width: 400px;
+            overflow: hidden; /* To ensure consistent image size */
+        }
+        
+        div.gallery:hover {
+            border: 1px solid red;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s; /* Add hover animation */
+        }
+        
+        div.gallery:hover img {
+            transform: scale(1.05); /* Scale up image on hover */
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixtext">
+    </div>
+    <table align="center">
+        <tr>
+            <td>
+                <div class="gallery">
+                    <img src="a1.jpeg">
+                </div>
+            </td>
+            <td>
+                <div class="gallery">
+                    <img src="b1.jpeg">
+                </div>
+            </td>
+            <td>
+                <div class="gallery">
+                    <img src="ch1.jpeg">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="gallery">
+                    <img src="coi.jpeg">
+                </div>
+            </td>
+            <td>
+                <div class="gallery">
+                    <img src="my.jpeg">
+                </div>
+            </td>
+            <td>
+                <div class="gallery">
+                    <img src="kq.jpeg">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="flexstyle.css">
+    <style>
+        #submit-button {
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        body {
+            background-color: rgb(183, 160, 160);
+        }
+    </style>
+</head>
+<body >
+    <div class="form-container">
+        <div class="left-column">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="text-input" required>
+
+                <label for="town">Town you were born in:</label>
+                <input type="text" id="town" name="town" class="text-input" required>
+
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" class="text-input" required>
+
+                <button type="submit" id="submit-button" >Submit</button>
+            </form>
+        </div>
+        <div class="right-column">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" class="text-input" rows="15"></textarea>
+        </div>
+    </div>
+</body>
+</html>
